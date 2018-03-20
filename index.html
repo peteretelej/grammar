@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<title>Grammar</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 	</head>
 	<style>
 html{ 
@@ -10,11 +12,10 @@ html{
 	font-size:18px;
 	font-weight:300;
 }
-body{margin:0;padding:0;}
 h1{
 	font-size:1.2em; color: #aeaeae; font-weight:700; margin:10px 0 ;padding:0; text-align:center;
 }
-.content{
+body{
 	width:90%;
 	overflow:hidden;
 	margin:5px auto;
@@ -29,25 +30,31 @@ textarea{
 	line-height:1.5rem;
 	color: #212F3C;
 	overflow:auto;
+	border:1px solid #aeaeae;
 }
-.footer {
-	position:fixed; 
-}
-.footer {
+.footer p{
+	margin:10px;
 	font-size:0.8rem;
 	color:#5D6D7E; 
+	overflow:hidden;
 }
-.footer a{ 
+.footer p a{ 
 	font-style:italic; text-decoration:none; 
 	color:#2471A3;
+}
+.footer button{
+	float:right;
 }
 	</style>
 	<body>
 		<h1>Check Your Grammar</h1>
 		<div class="content" >
-			<textarea cols="50" rows="10" placeholder="Start typing here!"></textarea>
-			<p class="footer">This assumes you have a grammar checking plugin e.g <a 
-      href="https://grammarly.com/" target="_blank" rel="noopener">Grammarly</a> installed in your browser. <a href="https://github.com/peteretelej/grammar">View Source on Github</a></p>
+			<textarea id="textbox" cols="50" rows="10" placeholder="Start typing here!"></textarea>
+		</div>
+		<div class="footer">
+			<p> This assumes you have a grammar checking plugin e.g <a 
+       href="https://grammarly.com/" target="_blank" rel="noopener">Grammarly</a> installed in your browser. <a href="https://github.com/peteretelej/grammar">View Source on Github</a>
+			</p>
 		</div>
 	</body>
 </html>
