@@ -1,7 +1,8 @@
 # Grammar Check
 
-A text box to check your grammar; 
+Simple html page to check your grammar; 
 
+Why?
 - Better privacy (as compared to Grammarly web page)
 
 Available at: [grammar.etelej.com](https://grammar.etelej.com)
